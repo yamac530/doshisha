@@ -1,0 +1,22 @@
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>サンプル</title>
+<script type="text/javascript">
+<!--
+var mylink = new Array(
+	"https://docs.google.com/forms/d/e/1FAIpQLScITE5bZ9aw0bZQyFz_qWBNh-u89oqydWdWZ3Rh3vofyigegw/viewform?vc=0&c=0&w=1&usp=mail_form_link",
+	"https://docs.google.com/forms/d/e/1FAIpQLSeSnAXotHhF9g3ysWlw5rSpGDLJZ8E1VioZQoK5TuhPl5ORTQ/viewform?vc=0&c=0&w=1&usp=mail_form_link"
+);
+function random_jump() {
+	var i = Math.floor(Math.random() * mylink.length);
+	location.href = mylink[i];
+}
+// -->
+</script>
+</head>
+<body>
+<a href="javascript:random_jump();">Click here to jump to the form</a>
+</body>
+</html>
