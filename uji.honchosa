@@ -1,0 +1,22 @@
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>宇治本調査</title>
+<script type="text/javascript">
+<!--
+var mylink = new Array(
+	"https://forms.gle/1dYMnu5YeyjKkPB79",
+	"https://forms.gle/NJEEN7DogmchKs4w8"
+);
+function random_jump() {
+	var i = Math.floor(Math.random() * mylink.length);
+	location.href = mylink[i];
+}
+// -->
+</script>
+</head>
+<body>
+<a href="javascript:random_jump();">Click here to jump to the form</a>
+</body>
+</html>
